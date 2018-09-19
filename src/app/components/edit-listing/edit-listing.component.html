@@ -1,0 +1,78 @@
+<a [routerLink]="['/listings']">Back</a>
+<br />
+<h2 class="page-header">Edit Listing</h2>
+<form (submit)="onEditSubmit()">
+  <div class="form-group">
+    <label>Service Name</label>
+    <input class="form-control" type="text" [(ngModel)]="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label>Address</label>
+    <input class="form-control" type="text" [(ngModel)]="address" name="address" required>
+  </div>
+  <div class="form-group">
+    <label>Owner</label>
+    <input class="form-control" type="text" [(ngModel)]="owner" name="owner" required>
+  </div>
+  <div class="form-group">
+    <label>Phone</label>
+    <input class="form-control" type="number" [(ngModel)]="phone" name="phone" required>
+  </div>
+  <div class="form-group">
+    <label>Service Type</label>
+    <select class="form-control" type="text" [(ngModel)]="serviceType" name="serviceType" required>
+      <option value="ESNY">Emergency Shelter</option>
+      <option value="EFW">Emergency Food/Water</option>
+      <option value="GS">Open Gas Stations</option>
+      <option value="CS">Charging Stations</option>
+      <option value="OFS">Open Food Stores</option>
+      <option value="WATM">Working ATMs</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Notes</label>
+    <input class="form-control" type="text" [(ngModel)]="notes" name="notes" >
+  </div>
+  <div class="form-group">
+    <label>Lat</label>
+    <input class="form-control" type="text" [(ngModel)]="lat" name="lat" >
+  </div>
+  <div class="form-group">
+    <label>Lon</label>
+    <input class="form-control" type="text" [(ngModel)]="lon" name="lon" >
+  </div>
+  <div class="form-group">
+    <label>Here Flag</label>
+    <input class="form-control" type="text" [(ngModel)]="here" name="here" >
+  </div>
+  <div class="form-group">
+    <label>Last Updated Date</label>
+    <input class="form-control" type="text" [(ngModel)]="updatedDate" name="updatedDate" >
+  </div>
+  <div class="form-group">
+    <label>disputed</label>
+    <input class="form-control" type="text" [(ngModel)]="disputed" name="disputed" required>
+  </div>
+  <div class="form-group">
+    <label>verified</label>
+    <input class="form-control" type="text" [(ngModel)]="verified" name="verified" required>
+  </div>
+  <div class="form-group">
+    <label>votes</label>
+    <input class="form-control" type="text" [(ngModel)]="votes" name="votes" required>
+  </div>
+  <div class="form-group">
+    <label>createDate</label>
+    <input class="form-control" type="text" [(ngModel)]="createDate" name="createDate" required>
+  </div>
+  <div class="form-group">
+    <label>archive</label>
+    <input class="form-control" type="text" [(ngModel)]="archive" name="archive" required>
+  </div>
+  <div class="form-group">
+    <label>dupe</label>
+    <input class="form-control" type="text" [(ngModel)]="dupe" name="dupe" required>
+  </div>
+  <input type="submit" value="submit" class="btn btn-success">
+</form>

@@ -1,0 +1,45 @@
+<div *ngIf = "listing">
+
+	<a [routerLink] = "['/listings']">Go back </a>
+	<br>
+	<h2 class ="page header">{{listing.name}}</h2>
+      	<p>{{ listing.address }}</p>
+	<div class = "row">
+		<div class = "col-md-4">
+			<img style="width:100%" class="thumbnail" src="{{imageUrl}}">
+		
+		</div>
+		
+		<div class = "col-md-8">
+			<ul class ="list-group">
+				<!--
+				<li class = "list-group-item">serviceType: {{listing.serviceType}}</li>
+				-->
+				<li class = "list-group-item" *ngIf="listing.serviceType == 'ESNY'">serviceType: ({{listing.serviceType}}) Emergency Shelter</li>
+				<li class = "list-group-item" *ngIf="listing.serviceType == 'EFW'">serviceType: ({{listing.serviceType}}) Emergency Food/Water</li>
+				<li class = "list-group-item" *ngIf="listing.serviceType == 'GS'">serviceType: ({{listing.serviceType}}) Open Gas Stations</li>
+				<li class = "list-group-item" *ngIf="listing.serviceType == 'CS'">serviceType: ({{listing.serviceType}}) Charging Stations</li>
+				<li class = "list-group-item" *ngIf="listing.serviceType == 'OFS'">serviceType: ({{listing.serviceType}}) Open Food Stores</li>
+				<li class = "list-group-item" *ngIf="listing.serviceType == 'WATM'">serviceType: ({{listing.serviceType}}) Working ATMs</li>
+				<li class = "list-group-item" *ngIf="listing.serviceType == 'other'">serviceType: ({{listing.serviceType}}) Other Services</li>
+				<li class = "list-group-item">Phone: {{listing.phone}}</li>
+				<li class = "list-group-item">Notes: {{listing.notes}}</li>
+				<li class = "list-group-item">Owner: {{listing.owner}}</li>
+				<li class = "list-group-item">Lat/Lon: {{listing.lat}} / {{listing.lon}}</li>
+				<li class = "list-group-item">here: {{listing.here}}</li>
+				<li class = "list-group-item">updatedDate: {{listing.updatedDate}}</li>
+				<li class = "list-group-item">disputed: {{listing.disputed}}</li>
+				<li class = "list-group-item">verified: {{listing.verified}}</li>
+				<li class = "list-group-item">votes: {{listing.votes}}</li>
+				<li class = "list-group-item">createDate: {{listing.createDate}}</li>
+				<li class = "list-group-item">archive: {{listing.archive}}</li>
+				<li class = "list-group-item">dupe: {{listing.dupe}}</li>
+			</ul>
+		
+		</div>
+		
+		<a class = "btn btn-default" [routerLink] = "['/edit-listing/'+listing.$key]">Edit</a>
+		<a (click)="onDeleteClick()" class = "btn btn-danger" >Delete</a>
+	</div>
+
+</div>
