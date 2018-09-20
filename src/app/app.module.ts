@@ -25,6 +25,7 @@ import { EventsComponent } from './components/events/events.component';
 import { EventDetailsComponent } from './components/event-details/event-details.component';
 import { AddEventComponent } from './components/add-event/add-event.component';
 import { EditEventComponent } from './components/edit-event/edit-event.component';
+import { ReportsComponent } from './reports/reports.component';
 
 
 
@@ -63,7 +64,9 @@ const appRoutes : Routes = [
 	{path:'event-details/:id',component:EventDetailsComponent},
 	{path:'add-event',component:AddEventComponent},
 	{path:'edit-event/:id',component:EditEventComponent},
-	
+
+        // reports	
+	{path:'reports',component:ReportsComponent},
 ]
 
 @NgModule({
@@ -85,7 +88,8 @@ const appRoutes : Routes = [
     EventsComponent,
     EventDetailsComponent,
     AddEventComponent,
-    EditEventComponent
+    EditEventComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,
