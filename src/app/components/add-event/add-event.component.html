@@ -1,0 +1,63 @@
+<a [routerLink]="['/events']">Back</a>
+<br />
+<h2 class="page-header">Add Event</h2>
+
+
+<form (submit)="onEventAddSubmit()">
+  <div class="form-group">
+    <label>Name</label>
+    <input class="form-control" type="text" [(ngModel)]="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label>startDate</label>
+    <input class="form-control" type="date" [(ngModel)]="startDate" name="startDate" required>
+  </div>
+  <div class="form-group">
+    <label>endDate</label>
+    <input class="form-control" type="date" [(ngModel)]="endDate" name="endDate" >
+  </div>
+  <div class="form-group">
+    <label>nePointLat</label>
+    <input class="form-control" type="text" [(ngModel)]="nePointLat" name="nePointLat" required>
+  </div>
+  <div class="form-group">
+    <label>nePointLon</label>
+    <input class="form-control" type="text" [(ngModel)]="nePointLon" name="nePointLon" required>
+  </div>
+  <div class="form-group">
+    <label>sePointLat</label>
+    <input class="form-control" type="text" [(ngModel)]="sePointLat" name="sePointLat" required>
+  </div>
+  <div class="form-group">
+    <label>sePointLon</label>
+    <input class="form-control" type="text" [(ngModel)]="sePointLon" name="sePointLon" required>
+  </div>
+  <div class="form-group">
+    <label>swPointLat</label>
+    <input class="form-control" type="text" [(ngModel)]="swPointLat" name="swPointLat" required>
+  </div>
+  <div class="form-group">
+    <label>swPointLon</label>
+    <input class="form-control" type="text" [(ngModel)]="swPointLon" name="swPointLon" required>
+  </div>
+  <div class="form-group">
+    <label>nwPointLat</label>
+    <input class="form-control" type="text" [(ngModel)]="nwPointLat" name="nwPointLat" required>
+  </div>
+  <div class="form-group">
+    <label>nwPointLon</label>
+    <input class="form-control" type="text" [(ngModel)]="nwPointLon" name="nwPointLon" required>
+  </div>
+  <div class="form-group">
+    <label>active</label>
+    <input class="form-control" type="text" [(ngModel)]="active" name="active" required>
+  </div>
+  <div class="form-group">
+    <label>notes</label>
+    <input class="form-control" type="text" [(ngModel)]="notes" name="notes" required>
+  </div>
+  
+  <input type="submit" value="submit" class="btn btn-success">
+</form>
+
+
