@@ -20,8 +20,8 @@ export class AddEventComponent implements OnInit {
         swPointLon?:number;
         nwPointLat?:number;
         nwPointLon?:number;
-        archive?:boolean;
-	active?:boolean;
+        archive:boolean;
+	active:string;
 	notes?:string;
 
 	event : any;
@@ -52,7 +52,7 @@ export class AddEventComponent implements OnInit {
                   nwPointLon: this.nwPointLon,
 		  //archive: this.archive,
 		  archive: false,
-                  active: this.active,
+                  active: this.active === 'true',
                   notes: this.notes
 	  }
   

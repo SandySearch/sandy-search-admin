@@ -133,8 +133,9 @@ interface Event{
   swPointLon?:number;
   nwPointLat?:number;
   nwPointLon?:number;
-  archive?:boolean;
-  active?:boolean;
+  archive:boolean;
+  active:boolean;
+  notes?:string;
 }
 
 /* import { Injectable } from '@angular/core';
