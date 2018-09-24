@@ -12,9 +12,11 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+
 # Specify port
 EXPOSE 4200
 
 # start app
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
+CMD ["bash"]
 
