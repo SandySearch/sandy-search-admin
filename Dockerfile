@@ -5,12 +5,12 @@ FROM node:9.4
 WORKDIR /app
 
 # install and cache app dependencies
-COPY package*.json /app
+COPY package*.json /app/
 #ADD package.json /usr/src/app/package.json
 RUN npm install
 
 # Bundle app source
-COPY . /app
+COPY . /app/
 
 
 # Specify port
