@@ -1,6 +1,10 @@
 # base image
 FROM node:9.4
 
+# update image due to security issues
+WORKDIR /root
+RUN apt-get update && apt-get -V upgrade
+
 # Bundle app source
 COPY . /app
 
