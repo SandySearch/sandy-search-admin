@@ -3,7 +3,7 @@ FROM node:9.4
 
 # update image due to security issues
 WORKDIR /root
-RUN apt-get update && apt-get -V upgrade
+RUN apt-get update && apt-get -V upgrade -y
 
 # Bundle app source
 COPY . /app
