@@ -3,7 +3,19 @@ FROM node:9.4
 
 # update image due to security issues
 WORKDIR /root
-RUN apt-get update && apt-get -V upgrade -y
+RUN apt-get update && apt-get -V install -y \
+   curl \
+   gcc-4.9 \
+   gnupg \
+   libxml2 \
+   procps \
+   git \
+   imagemagick \
+   openssl \
+   perl \
+   sensible-utils \
+   wget \
+   && rm -rf /var/lib/apt/lists/*
 
 # Bundle app source
 COPY . /app
