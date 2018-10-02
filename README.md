@@ -2,9 +2,7 @@
 
 ## Sandy Search (was Emergency Services - Search and Reporting) Mobile and Web App
 
-[![License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](https://github.com/mkobar/essr-aoc/blob/master/LICENSE)
-![Platform](https://img.shields.io/badge/platform-Android-brightgreen.svg)
-![Platform](https://img.shields.io/badge/platform-iOS-blue.svg)
+[![License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](https://github.com/mkobar/sandy-search-admin/blob/master/LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Web-orange.svg)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
