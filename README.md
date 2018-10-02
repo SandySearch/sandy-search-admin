@@ -89,5 +89,7 @@ Please do contact me directly if you can use or add to this project.
 
 ## License
 
-Copyright @ 2018 [RKOSecurity](http://www.rkosecurity.com)
+Released under the [MIT License](http://opensource.org/licenses/MIT)
+
+Copyright @ 2018 [RKO Security](http://www.rkosecurity.com)
 
