@@ -34,55 +34,56 @@ Nothing fancy but it will work, much like the way Zello was used after Hurricane
 
 ### How It Was Built
 
-This mobile application was built with the **sweet** [Ionic 3 Framework](http://ionicframework.com/) (Angular5/TypeScript/CSS/HTML5) and uses the Google [FireBase](https://firebase.google.com/) services for authentication, realtime database and cloud hosting of the web app (currently on a free spark plan).
+This web application uses the Google [FireBase](https://firebase.google.com/) services for authentication and a realtime database (currently on a free spark plan).
 
-Currently generating Android app and will provide iOS app from same code base.
+Maps and geocoding is pulled from **Google APIs**.  I plan to do reverse geocoding from Google too.
 
-Maps and geocoding is pulled from Google APIs.  I plan to do reverse geocoding from Google too.
+The Admin user interface is all Node and Angular. And hosted in a Docker container (stored in the **IBM Cloud Container Registry**) in a  Kubernetes cluster on the **IBM Cloud Kubernetes Service**. Need to add reports and maps to admin user interface.
 
-Admin user interface is all Node and Angular.  Need to add reports and maps to admin interface.  And host on container on IBM cloud.
-
-Want to use Watson services to post-process all user request data and create heatmaps for the optimal locations for services and food distribution.
+Want to use **IBM Watson services** to post-process all user request data and create heatmaps for the optimal locations for services and food distribution.
 
 All built with a Vim editor and a cmd window (and git).
 
+### What I Learned from this Hackathon
+
+- Firebase Database with Observables
+- GeoFire for geolocation
+- Angular 2 and NodeJs
+- Dockerizing an Angular 2 / NodeJs application
+- Autobuilding a Docker image from a GitHub checkin with **Docker Cloud**
+- Storing Docker images in the **IBM Cloud Container Registry**
+- Running Apps in Kubernetes in the **IBM Cloud Kubernetes Service** (on the free tier) with NodePort networking
+- Fixing vulnerabilities discovered by the **IBM Cloud Container Registry Vulnerability Advisor**
+
+### Next Steps for SandySearch
+
+- Add reports to the Admin user interface
+- Dockerizing an Ionic 3 app
+- Internationalization
+- **IBM Watson ML** to predict where services will be needed based on past experience
+
+### See Also
+
+The Sandy Search Mobile App on GitHub: https://github.com/mkobar/sandy-search
 
 ### Live Demos
 
-Live web app version of SandyService can be found here:  https://sandy-search.firebaseapp.com/#/landing
+Live web app version of SandyService Admin can be found here:  https://mkobar.github.io/sandy-search-admin/
 
-And the Android APK is available on GitHub here:
-  https://github.com/mkobar/sandysearch/releases/tag/0.0.6
+Live web app version of SandyService Admin can be found here: https://plu.sh/sandyadmin
 
-Live web app version of SandyServiceAdmin can be found here:  https://mkobar.github.io/sandy-search-admin/reports
-
-The original GitHub repository for the web app is here: https://github.com/mkobar/essr-aot
+Live SandyService Admin web app running on **IBM Cloud Kubernetes** can be found here: http://173.193.99.198:30471
 
 ## Things left to do:
 
-- [x] ~~store service location data in firebase~~
-- [x] ~~add a map view (with Google Maps or OpenStreetMaps)~~
-- [x] ~~add the account request function (and screen) - and force to validate with email?~~
-- [x] ~~add more logging~~
-- [x] ~~add in the real distance calculations (from stree address).  There are seveal free services for this but they may be rate limited.~~
-- [x] ~~add dupe reporting option~~
-- [x] ~~add initial tutorial slides~~
-- [x] ~~fix km to miles~~
 - [x] ~~add an admin interface for entry and user management~~
-- [ ] rate limit votes and disputed to 1 an hour with local storage
-- [ ] add spinner for list and map
-- [ ] change markers by serviceType
-- [ ] iOS build and App Store upload - just need my Mac.
-- [ ] Google Play Store upload
 - [x] ~~host admin interface on GitHub~~
 - [ ] add reports (timeline maps by createDate, updateDate and votes)
-- [ ] host admin user interface on IBM (docker?)
+- [x] ~~host admin user interface on IBM Cloud (Docker and Kubernetes)~~
 - [ ] export usage data in csv format
-- [ ] add Watson ML for heatmap generation
-- [ ] process usage with Watson to predict optimal locations for future services
-- [ ] need a video of both app usage and reporting
-- [ ] need better logo  ;^}
-
+- [ ] add **IBM Watson ML** for heatmap generation
+- [ ] process usage with **IBM Watson** to predict optimal locations for future services
+- [x] ~~need a video of admin usage and reporting~~
 
 Please do contact me directly if you can use or add to this project.
 
