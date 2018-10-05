@@ -51,9 +51,11 @@ All built with a Vim editor and a cmd window (and git).
 - Angular 2 and NodeJs
 - Dockerizing an Angular 2 / NodeJs application
 - Autobuilding a Docker image from a GitHub checkin with **Docker Cloud**
-- Storing Docker images in the **IBM Cloud Container Registry**
+- Storing and updating Docker images in the **IBM Cloud Container Registery**
 - Running Apps in Kubernetes in the **IBM Cloud Kubernetes Service** (on the free tier) with NodePort networking
 - Fixing vulnerabilities discovered by the **IBM Cloud Container Registry Vulnerability Advisor**
+- Upgraded running Docker containers with new images
+- Upgraded running Docker containers in Kubernetes in the **IBM Cloud Kubernetes Service** with new images
 
 ### Next Steps for SandySearch
 
@@ -73,6 +75,9 @@ Live web app version of SandyService Admin can be found here:  https://mkobar.gi
 Live web app version of SandyService Admin can be found here: https://plu.sh/sandyadmin
 
 Live SandyService Admin web app running on **IBM Cloud Kubernetes** can be found here: http://173.193.99.198:30471
+
+Sandy Search Admin Docker image on **Docker Cloud**:  mkobar/sandysearchadmin
+Sandy Search Admin Docker image on **IBM Cloud Kubernetes Service**:  registry.ng.bluemix.net/call4code/sandysearchadmin
 
 ## Things left to do:
 
