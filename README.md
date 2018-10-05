@@ -76,6 +76,8 @@ Live web app version of SandyService Admin can be found here: https://plu.sh/san
 
 Live SandyService Admin web app running on **IBM Cloud Kubernetes** can be found here: http://173.193.99.198:30471
 
+### Docker Images
+
 Sandy Search Admin Docker image on **Docker Cloud**:  mkobar/sandysearchadmin
 
 Sandy Search Admin Docker image on **IBM Cloud Kubernetes Service**:  registry.ng.bluemix.net/call4code/sandysearchadmin
