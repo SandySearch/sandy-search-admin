@@ -79,7 +79,7 @@ Live SandyService Admin web app running on **IBM Cloud Kubernetes** can be found
 
 Sandy Search Admin Docker image on **Docker Cloud**:  mkobar/sandysearchadmin
 
-Sandy Search Admin Docker image on **IBM Cloud Kubernetes Service**:  registry.ng.bluemix.net/call4code/sandysearchadmin
+Sandy Search Admin Docker image on **IBM Cloud Container Registry**:  registry.ng.bluemix.net/call4code/sandysearchadmin
 
 ## Things left to do:
 
