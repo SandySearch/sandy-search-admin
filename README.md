@@ -60,7 +60,6 @@ All built with a Vim editor and a cmd window (and git).
 ### Next Steps for SandySearch
 
 - Add reports to the Admin user interface
-- Dockerizing an Ionic 3 app
 - Internationalization
 - **IBM Watson ML** to predict where services will be needed based on past experience
 
