@@ -4,8 +4,8 @@
 
 [![License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](https://github.com/mkobar/sandy-search-admin/blob/master/LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Web-orange.svg)
-[![Container](https://img.shields.io/badge/container-Docker-blue.svg?style=flat-square)](https://github.com/mkobar/sandy-search-admin/blob/master/Dockerfile)
-[![Container](https://img.shields.io/badge/container-Kubernetes-blue.svg?style=flat-square)](https://github.com/mkobar/sandy-search-admin/blob/master/Dockerfile)
+[![Container](https://img.shields.io/badge/container-Docker-purple.svg?style=flat-square)](https://github.com/mkobar/sandy-search-admin/blob/master/Dockerfile)
+[![Container](https://img.shields.io/badge/container-Kubernetes-gold.svg?style=flat-square)](https://github.com/mkobar/sandy-search-admin/blob/master/Dockerfile)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Entry for The Global Call for Code Hackathon, 28 September 2018
