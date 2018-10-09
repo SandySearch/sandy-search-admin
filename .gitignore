@@ -48,3 +48,4 @@ README - Copy.md
 *.swp
 *.swp
 Dockerfile~
+src/app/credentials-production.ts
