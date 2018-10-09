@@ -7,6 +7,8 @@ import { AngularFireModule,AuthProviders, AuthMethods  } from 'angularfire2';
 import {FirebaseService} from './services/firebase.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 
+import { firebaseConfig, googleMapsKey } from './credentials'
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -27,8 +29,9 @@ import { AddEventComponent } from './components/add-event/add-event.component';
 import { EditEventComponent } from './components/edit-event/edit-event.component';
 import { ReportsComponent } from './reports/reports.component';
 
+//import { AgmCoreModule } from '@agm/core'
 
-
+/***
 export const firebaseConfig = {
   apiKey: 'AIzaSyDFZL8mbJVpm5ioYGrJ1vbwu_6NC77o3O4',
   authDomain: 'sandy-search.firebaseapp.com',
@@ -37,6 +40,7 @@ export const firebaseConfig = {
   storageBucket: 'sandy-search.appspot.com',
   messagingSenderId: '400553647913'
 }
+***/
 
 const firebaseAuthConfig = {
   //provider: AuthProviders.Google,
@@ -95,9 +99,14 @@ const appRoutes : Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-	FlashMessagesModule,
-	RouterModule.forRoot(appRoutes),
-	AngularFireModule.initializeApp(firebaseConfig,firebaseAuthConfig)
+    FlashMessagesModule,
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(firebaseConfig,firebaseAuthConfig)
+    /***
+    AgmCoreModule.forRoot({
+      apiKey: googleMapsKey
+    })
+    ***/
   ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]
