@@ -16,7 +16,7 @@
   </div>
   <div class="form-group">
     <label>Phone</label>
-    <input class="form-control" type="number" [(ngModel)]="phone" name="phone" required>
+    <input class="form-control" type="number" [(ngModel)]="phone" name="phone">
   </div>
   <div class="form-group">
     <label>Service Type</label>
@@ -36,15 +36,20 @@
   </div>
   <div class="form-group">
     <label>Lat</label>
-    <input class="form-control" type="text" [(ngModel)]="lat" name="lat" >
+    <input class="form-control" type="number" [(ngModel)]="lat" name="lat" value="0" min="-90" step="0.000001" data-number-to-fixed="6" data-number-stepfactor="10" >
   </div>
   <div class="form-group">
     <label>Lon</label>
-    <input class="form-control" type="text" [(ngModel)]="lon" name="lon" >
+    <input class="form-control" type="number" [(ngModel)]="lon" name="lon" value="0" min="-180" step="0.000001" data-number-to-fixed="6" data-number-stepfactor="10" >
   </div>
   <div class="form-group">
-    <label>Here Flag</label>
-    <input class="form-control" type="text" [(ngModel)]="here" name="here" >
+    <label>Here Flag</label>&nbsp;&nbsp;{{this.here}}
+    <!--
+    <select class="form-control" type="text" [(ngModel)]="here" name="here" >
+      <option value="true">TRUE</option>
+      <option value="false">FALSE</option>
+    </select>
+    -->
   </div>
   <div class="form-group">
     <label>Last Updated Date</label>
@@ -56,7 +61,10 @@
   </div>
   <div class="form-group">
     <label>verified</label>
-    <input class="form-control" type="text" [(ngModel)]="verified" name="verified" required>
+    <select class="form-control" type="text" [(ngModel)]="verified" name="verified" required>
+      <option value="true">TRUE</option>
+      <option value="false">FALSE</option>
+    </select>
   </div>
   <div class="form-group">
     <label>votes</label>
@@ -68,7 +76,10 @@
   </div>
   <div class="form-group">
     <label>archive</label>
-    <input class="form-control" type="text" [(ngModel)]="archive" name="archive" required>
+    <select class="form-control" type="text" [(ngModel)]="archive" name="archive" required>
+      <option value="true">TRUE</option>
+      <option value="false">FALSE</option>
+    </select>
   </div>
   <div class="form-group">
     <label>dupe</label>
