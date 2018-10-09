@@ -107,3 +107,4 @@ Released under the [MIT License](http://opensource.org/licenses/MIT)
 
 Copyright @ 2018 [RKO Security](http://www.rkosecurity.com)
 
+[SandySearch Privacy Policy](https://mkobar.github.io/sandy-search-privacy/sandy-search-privacy-policy-EN-100.html)
