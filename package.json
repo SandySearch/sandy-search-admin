@@ -1,6 +1,6 @@
 {
   "name": "sandysearch-admin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "git+https://github.com/mkobar/sandy-search-admin",
   "angular-cli": {},
   "scripts": {

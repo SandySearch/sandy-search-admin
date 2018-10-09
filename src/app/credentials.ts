@@ -11,4 +11,4 @@ export const firebaseConfig = {
 
 export const googleMapsKey = 'AIzaSyD8HNt2Du1RFCgbT3eUXUU0jzflA-qK0Ak'
 
-//export const appVersion = '0.0.7'
+//export const appVersion = '0.0.4'
