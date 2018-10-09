@@ -18,13 +18,13 @@ export class EditListingComponent implements OnInit {
 	notes:any;
         lat: any
         lon: any
-        here: false
+        here: string
         updatedDate: any
         disputed: any
-        verified: boolean
+        verified: string
         votes: number
         createDate: string
-	archive: boolean
+	archive: string
 	dupe: number
 
   constructor(
@@ -46,13 +46,28 @@ export class EditListingComponent implements OnInit {
 		  this.serviceType = listing.serviceType;
 		  this.lat = listing.lat;
 		  this.lon = listing.lon;
-		  this.here = listing.here;
+		  //this.here = listing.here;
+		  if (listing.here) {
+		    this.here = 'TRUE';
+		  } else {
+		    this.here = 'FALSE';
+		  }
 		  this.updatedDate = listing.updatedDate;
 		  this.disputed = listing.disputed;
-		  this.verified = listing.verified;
+		  //this.verified = listing.verified;
+		  if (listing.verified) {
+		    this.verified = 'true';
+		  } else {
+		    this.verified = 'false';
+		  }
 		  this.votes = listing.votes;
 		  this.createDate = listing.createDate;
-		  this.archive = listing.archive;
+		  //this.archive = listing.archive;
+		  if (listing.archive) {
+		    this.archive = 'true';
+		  } else {
+		    this.archive = 'false';
+		  }
 		  this.dupe = listing.dupe;
 	  });
 	  
@@ -70,13 +85,13 @@ export class EditListingComponent implements OnInit {
 		  serviceType: this.serviceType,
 		  lat: this.lat,
 		  lon: this.lon,
-		  here: this.here,
+		  //here: this.here === 'true',
 		  updatedDate: this.updatedDate,
 		  disputed: this.disputed,
-		  verified: this.verified,
+		  verified: this.verified === 'true',
 		  votes: this.votes,
 		  createDate: this.createDate,
-		  archive: this.archive,
+		  archive: this.archive === 'true',
 		  dupe: this.dupe
 		  
 	  }

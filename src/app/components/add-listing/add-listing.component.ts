@@ -21,7 +21,7 @@ export class AddListingComponent implements OnInit {
         here: false
         updatedDate: any
         disputed: any
-        verified: boolean
+        verified: string
         votes: number
         createDate: string
 	archive: boolean
@@ -49,7 +49,7 @@ export class AddListingComponent implements OnInit {
 		  here: false,
 		  updatedDate: now,
 		  disputed: 0,
-		  verified: false,  // is this correct?
+		  verified: this.verified === 'true',  // is this correct?
 		  votes: 0,
 		  createDate: now,
 		  archive: false,
