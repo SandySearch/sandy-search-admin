@@ -49,3 +49,4 @@ README - Copy.md
 *.swp
 Dockerfile~
 src/app/credentials-production.ts
+.dockerignore~

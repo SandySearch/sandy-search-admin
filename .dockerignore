@@ -1,2 +1,14 @@
-# dependencies
+# dependencies to ignore in docker
+/.firebase
+/.git
 /node_modules
+screenshots/*
+screenshots-old/*
+src/assets/img/old
+
+*.mp4
+.firebaserc
+.gitignore
+**/*.xcf
+**/*~
+database.rules.json
