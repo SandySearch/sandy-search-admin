@@ -1,12 +1,12 @@
+# base image
+FROM node:9.4
+
 # Set one or more individual labels
 LABEL org.sandysearch.name="SandySearch Admin User Interface"
 LABEL org.sandysearch.version="0.0.4-beta"
 LABEL org.sandysearch.release-date="2018-10-16"
 LABEL org.sandysearch.version.is-production=""
 LABEL org.sandysearch.hackathon="Call For Code 2018"
-
-# base image
-FROM node:9.4
 
 # update image due to security issues
 WORKDIR /root
