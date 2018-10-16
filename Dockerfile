@@ -1,5 +1,9 @@
+# how to build tiny production image from:
+# https://blog.hasura.io/an-exhaustive-guide-to-writing-dockerfiles-for-node-js-web-apps-bbee6bd2f3c4
+#
 # base image
-FROM node:9.4
+#FROM node:9.4
+FROM node:8.9-alpine
 
 # Set one or more individual labels
 LABEL org.sandysearch.name="SandySearch Admin User Interface"
@@ -10,20 +14,20 @@ LABEL org.sandysearch.hackathon="Call For Code 2018"
 
 # update image due to security issues
 WORKDIR /root
-RUN apt-get update && apt-get -V install -y \
-   --no-install-recommends \
-   curl \
-   gcc-4.9 \
-   gnupg \
-   libxml2 \
-   procps \
-   git \
-   imagemagick \
-   openssl \
-   perl \
-   sensible-utils \
-   wget \
-   && rm -rf /var/lib/apt/lists/*
+#RUN apt-get update && apt-get -V install -y \
+#   --no-install-recommends \
+#   curl \
+#   gcc-4.9 \
+#   gnupg \
+#   libxml2 \
+#   procps \
+#   git \
+#   imagemagick \
+#   openssl \
+#   perl \
+#   sensible-utils \
+#   wget \
+#   && rm -rf /var/lib/apt/lists/*
 
 # Bundle app source
 COPY . /app
