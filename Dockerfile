@@ -4,6 +4,7 @@ FROM node:9.4
 # update image due to security issues
 WORKDIR /root
 RUN apt-get update && apt-get -V install -y \
+   --no-install-recommends \
    curl \
    gcc-4.9 \
    gnupg \
