@@ -8,12 +8,14 @@
 			<img style="width:100%" class="thumbnail" src="{{event_details.firebase_url}}">
 			-->
 <div *ngIf="lat && lng">
+	<agm-map [latitude]="lat" [longitude]="lng" [streetViewControl]="false" [zoom]="zoom">
 <!--
-<agm-map [zoom]="10" [latitude]="lat" [longitude]="lng">
--->
-  <agm-map [latitude]="lat" [longitude]="lng" [streetViewControl]="false">
     <agm-marker [latitude]="lat" [longitude]="lng">
     </agm-marker>
+-->
+    <agm-polygon [paths]="paths" [editable]="false" [fillColor]="'#c60331'">
+    </agm-polygon>
+
   </agm-map>
 
 </div>
