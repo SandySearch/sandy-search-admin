@@ -75,10 +75,6 @@ Live web app version of SandyService Admin can be found here:  https://mkobar.gi
 
 Live web app version of SandyServiceAdmin (v0.0.4) can be found here:  https://plu.sh/sandyadmin 
 
-Live web app (v0.0.2) running on **IBM Cloud Kubernetes Service** can be found here:  http://173.193.99.198:30471
-
-Live web app (v0.0.3) running on **IBM Cloud Kubernetes Service** can be found here:  http://173.193.99.198:30433
-
 Live web app (v0.0.4) running on **IBM Cloud Kubernetes Service** can be found here:  http://173.193.99.198:30577
 
 
@@ -90,14 +86,11 @@ Sandy Search Admin Docker image on **IBM Cloud Container Registry**:  registry.n
 
 ## Things left to do:
 
-- [x] ~~add an admin interface for entry and user management~~
-- [x] ~~host admin interface on GitHub~~
 - [ ] add reports (timeline maps by createDate, updateDate and votes)
 - [x] ~~host admin user interface on IBM Cloud (Docker and Kubernetes)~~
 - [ ] export usage data in csv format
 - [ ] add **IBM Watson ML** for heatmap generation
 - [ ] process usage with **IBM Watson** to predict optimal locations for future services
-- [x] ~~need a video of admin usage and reporting~~
 
 Please do contact me directly if you can use or add to this project.
 
