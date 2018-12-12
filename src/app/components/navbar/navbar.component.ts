@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  public version: string = "0.0.4"
+  public version: string = "1.0.5"
 
   constructor(public af:AngularFire,public flashMessage:FlashMessagesService,public router:Router) { }
 

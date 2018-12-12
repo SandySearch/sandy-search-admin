@@ -29,7 +29,7 @@ import { AddEventComponent } from './components/add-event/add-event.component';
 import { EditEventComponent } from './components/edit-event/edit-event.component';
 import { ReportsComponent } from './reports/reports.component';
 
-//import { AgmCoreModule } from '@agm/core'
+import { AgmCoreModule } from '@agm/core'
 
 /***
 export const firebaseConfig = {
@@ -101,12 +101,10 @@ const appRoutes : Routes = [
     HttpModule,
     FlashMessagesModule,
     RouterModule.forRoot(appRoutes),
-    AngularFireModule.initializeApp(firebaseConfig,firebaseAuthConfig)
-    /***
+    AngularFireModule.initializeApp(firebaseConfig,firebaseAuthConfig),
     AgmCoreModule.forRoot({
       apiKey: googleMapsKey
     })
-    ***/
   ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]

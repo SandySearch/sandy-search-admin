@@ -4,8 +4,19 @@
       	<p>{{ listing.address }}</p>
 	<div class = "row">
 		<div class = "col-md-4">
+			<!--
 			<img style="width:100%" class="thumbnail" src="{{imageUrl}}">
-		
+			-->
+<div *ngIf="lat && lng">
+<!--
+<agm-map [zoom]="10" [latitude]="lat" [longitude]="lng">
+-->
+  <agm-map [latitude]="lat" [longitude]="lng" [streetViewControl]="false" [zoom]="zoom">
+    <agm-marker [latitude]="lat" [longitude]="lng">
+    </agm-marker>
+  </agm-map>
+
+</div>
 		</div>
 		
 		<div class = "col-md-8">
