@@ -15,6 +15,7 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "1.0.0-beta.1",
     "@angular/common": "^2.3.1",
     "@angular/compiler": "^2.3.1",
     "@angular/core": "^2.3.1",
@@ -24,7 +25,6 @@
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
     "adm-zip": "^0.4.11",
-    "angular-google-maps": "^2.4.1",
     "angular2-flash-messages": "^1.0.5",
     "angularfire2": "^2.0.0-beta.8",
     "base64-url": "^2.0.0",
@@ -35,7 +35,6 @@
     "hoek": "^4.2.1",
     "https-proxy-agent": "^2.2.0",
     "randomatic": "^3.0.0",
-    "rxjs": "^5.0.1",
     "sshpk": "^1.14.1",
     "tough-cookie": "^2.3.3",
     "ts-helpers": "^1.1.1",
@@ -58,6 +57,6 @@
     "protractor": "^5.4.1",
     "ts-node": "1.2.1",
     "tslint": "^4.3.0",
-    "typescript": "^2.3.4"
+    "typescript": "2.3.4"
   }
 }
