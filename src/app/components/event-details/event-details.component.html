@@ -1,16 +1,11 @@
 <div *ngIf = "event_details">
 
-	<a [routerLink] = "['/events']">Go back </a>
-	<br>
-	
-	
-	<h2 class ="page header">{{event_details.name}} <small>{{event_details.active}}</small></h2>
+	<h2 class ="page header" *ngIf="event_details.active">{{event_details.name}}  <small>ACTIVE</small></h2>
+	<h2 class ="page header" *ngIf="!event_details.active">{{event_details.name}} <small>not ACTIVE</small></h2>
 	<div class = "row">
 		<div class = "col-md-4">
 			<img style="width:100%" class="thumbnail" src="{{event_details.firebase_url}}">
-		
 		</div>
-		
 		<div class = "col-md-8">
 			<ul class ="list-group">
 				<li class = "list-group-item">Name: <b>{{event_details.name}}</b></li>
@@ -21,16 +16,12 @@
 				<li class = "list-group-item">sePoint Lat/Lon: <b>{{event_details.sePointLat}}</b> / <b>{{event_details.sePointLon}}</b></li>
 				<li class = "list-group-item">swPoint Lat/Lon: <b>{{event_details.swPointLat}}</b> / <b>{{event_details.swPointLon}}</b></li>
 				<li class = "list-group-item">nwPoint Lat/Lon: <b>{{event_details.nwPointLat}}</b> / <b>{{event_details.nwPointLon}}</b></li>
-				<li class = "list-group-item">archive: <b>{{event_details.archive}}</b></li>
-				<li class = "list-group-item">active: <b>{{event_details.active}}</b></li>
-				
+				<li class = "list-group-item">archive: <b>{{event_details.archive}}</b>
+				&nbsp;&nbsp;|&nbsp;&nbsp;active: <b>{{event_details.active}}</b></li>
 			</ul>
-		
 		</div>
-		
-		<a class = "btn btn-default" [routerLink] = "['/edit-event/' + event_details.$key]">Edit</a>
+		<a class="btn btn-default" [routerLink] = "['/events']">Go back </a>
+		<a class="btn btn-default" [routerLink] = "['/edit-event/' + event_details.$key]">Edit</a>
 		<a (click) = "onEventDelete()" class = "btn btn-danger" >Delete</a>
 	</div>
-
-
 </div>

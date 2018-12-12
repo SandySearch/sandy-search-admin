@@ -1,7 +1,5 @@
 <div *ngIf = "listing">
 
-	<a [routerLink] = "['/listings']">Go back </a>
-	<br>
 	<h2 class ="page header">{{listing.name}}</h2>
       	<p>{{ listing.address }}</p>
 	<div class = "row">
@@ -22,22 +20,22 @@
 				<li class = "list-group-item" *ngIf="listing.serviceType == 'OFS'">serviceType: <strong>({{listing.serviceType}}) Open Food Stores</strong></li>
 				<li class = "list-group-item" *ngIf="listing.serviceType == 'WATM'">serviceType: <strong>({{listing.serviceType}}) Working ATMs</strong></li>
 				<li class = "list-group-item" *ngIf="listing.serviceType == 'other'">serviceType: <strong>({{listing.serviceType}}) Other Services</strong></li>
-				<li class = "list-group-item">Phone: {{listing.phone}}</li>
 				<li class = "list-group-item">Notes: {{listing.notes}}</li>
-				<li class = "list-group-item">Owner: {{listing.owner}}</li>
-				<li class = "list-group-item">Lat/Lon: <font color="blue">{{listing.lat}} / {{listing.lon}}</font></li>
-				<li class = "list-group-item">here: <font color="red"> {{listing.here}}</font></li>
-				<li class = "list-group-item">updatedDate: {{listing.updatedDate}}</li>
-				<li class = "list-group-item">disputed: {{listing.disputed}}</li>
-				<li class = "list-group-item">verified: <font color="red"> {{listing.verified}}</font></li>
-				<li class = "list-group-item">votes: {{listing.votes}}</li>
-				<li class = "list-group-item">createDate: {{listing.createDate}}</li>
-				<li class = "list-group-item">archive: <font color="red"> {{listing.archive}}</font></li>
-				<li class = "list-group-item">dupe: {{listing.dupe}}</li>
+				<li class = "list-group-item">Owner: {{listing.owner}}
+				&nbsp;&nbsp;|&nbsp;&nbsp;Phone: {{listing.phone}}</li>
+				<li class = "list-group-item">Lat/Lon: <font color="blue">{{listing.lat}} / {{listing.lon}}</font>
+				&nbsp;&nbsp;|&nbsp;&nbsp;here: <font color="red"> {{listing.here}}</font></li>
+				<li class = "list-group-item">createDate: {{listing.createDate}}
+				&nbsp;&nbsp;|&nbsp;&nbsp;updatedDate: {{listing.updatedDate}}</li>
+				<li class = "list-group-item">archive: <font color="red"> {{listing.archive}}</font>
+				&nbsp;&nbsp;|&nbsp;&nbsp;verified: <font color="red"> {{listing.verified}}</font></li>
+				<li class = "list-group-item">disputed: {{listing.disputed}}
+				&nbsp;&nbsp;|&nbsp;&nbsp;dupe: {{listing.dupe}}
+				&nbsp;&nbsp;|&nbsp;&nbsp;votes: {{listing.votes}}</li>
 			</ul>
 		
 		</div>
-		
+		<a class = "btn btn-default" [routerLink] = "['/listings']">Go back </a>
 		<a class = "btn btn-default" [routerLink] = "['/edit-listing/'+listing.$key]">Edit</a>
 		<a (click)="onDeleteClick()" class = "btn btn-danger" >Delete</a>
 	</div>
