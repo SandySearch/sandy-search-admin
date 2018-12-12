@@ -10,10 +10,10 @@ import * as firebase from 'firebase';
   // as per https://github.com/SebastianM/angular-google-maps/issues/1018
   styles: [`
     .sebm-google-map-container {
-       height: 200px;
+       height: 300px;
      }
      .agm-map {
-       height: 200px;
+       height: 300px;
      }
   `],
   //styleUrls: ['./listing.component.css']
@@ -40,7 +40,6 @@ export class ListingComponent implements OnInit {
 	     this.listing = listing;
 	     this.lat = this.listing.lat;
 	     this.lng = this.listing.lon;
-	     this.zoom = 10;
     });
 	  
   }
