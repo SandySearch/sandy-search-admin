@@ -34,6 +34,7 @@
     "firebase": "^3.9.0",
     "hoek": "^4.2.1",
     "https-proxy-agent": "^2.2.0",
+    "lodash.template": "^4.5.0",
     "randomatic": "^3.0.0",
     "sshpk": "^1.14.1",
     "tough-cookie": "^2.3.3",
