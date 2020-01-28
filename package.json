@@ -1,7 +1,7 @@
 {
   "name": "sandysearch-admin",
   "version": "1.0.5",
-  "repository": "git+https://github.com/mkobar/sandy-search-admin",
+  "repository": "git+https://github.com/sandysearch/sandy-search-admin",
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
