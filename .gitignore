@@ -50,3 +50,6 @@ README - Copy.md
 Dockerfile~
 src/app/credentials-production.ts
 .dockerignore~
+node_modules-WORKING/
+package - WORKING.json
+package.json-OLD
