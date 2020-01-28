@@ -65,7 +65,7 @@ All built with a Vim editor and a cmd window (and git).
 
 ### See Also
 
-The Sandy Search Mobile App on GitHub: https://github.com/mkobar/sandy-search
+The Sandy Search Mobile App on GitHub: https://github.com/sandysearch/sandy-search
 
 ### Live Demos
 
