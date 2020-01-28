@@ -71,7 +71,7 @@ The Sandy Search Mobile App on GitHub: https://github.com/mkobar/sandy-search
 
 #### Sandy Search Admin User Interface
 
-Live web app version of SandyService Admin can be found here:  https://mkobar.github.io/sandy-search-admin/
+Live web app version of SandyService Admin can be found here:  https://sandysearch.github.io/sandy-search-admin/
 
 Live web app version of SandyServiceAdmin (v0.0.4) can be found here:  https://plu.sh/sandyadmin 
 
@@ -98,6 +98,6 @@ Please do contact me directly if you can use or add to this project.
 
 Released under the [MIT License](http://opensource.org/licenses/MIT)
 
-Copyright @ 2018 [RKO Security](http://www.rkosecurity.com)
+Copyright @ 2018-2020 [RKO Security](http://www.rkosecurity.com)
 
 [SandySearch Privacy Policy](https://mkobar.github.io/sandy-search-privacy/sandy-search-privacy-policy-EN-100.html)
