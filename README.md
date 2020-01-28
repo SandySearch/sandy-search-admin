@@ -73,7 +73,7 @@ The Sandy Search Mobile App on GitHub: https://github.com/mkobar/sandy-search
 
 Live web app version of SandyService Admin can be found here:  https://sandysearch.github.io/sandy-search-admin/
 
-Live web app version of SandyServiceAdmin (v0.0.4) can be found here:  https://plu.sh/sandyadmin 
+Live web app version of SandyServiceAdmin (v0.0.4) can be found here:  https://plu.sh/sandyadmin2 
 
 Live web app (v0.0.4) running on **IBM Cloud Kubernetes Service** can be found here:  http://173.193.99.198:30577
 
