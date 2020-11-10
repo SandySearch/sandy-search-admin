@@ -38,7 +38,7 @@
     "debug": "^2.6.9",
     "diff": "^3.5.0",
     "dot-prop": ">=4.2.1",
-    "firebase": "4.5.1",
+    "firebase": "8.0.1",
     "handlebars": "^4.6.0",
     "hoek": "^4.2.1",
     "https-proxy-agent": "^2.2.3",
