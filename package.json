@@ -45,7 +45,7 @@
     "js-yaml": "^3.13.1",
     "lodash.template": "^4.5.0",
     "randomatic": "^3.0.0",
-    "set-value": "^2.0.1",
+    "set-value": "^4.0.1",
     "sshpk": "^1.14.1",
     "tough-cookie": "^2.3.3",
     "ts-helpers": "^1.1.1",
